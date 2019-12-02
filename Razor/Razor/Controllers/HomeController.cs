@@ -14,6 +14,7 @@ namespace Razor.Controllers
         {
            
             ViewBag.Departamentos = ListaDepartamento();
+            ViewBag.Produtos = ListaProduto();
             return View();
         }
 
@@ -32,6 +33,29 @@ namespace Razor.Controllers
             departamento.Categorias = vaListaCategoria;
             vaListaDepartamento.Add(departamento);
             return vaListaDepartamento;
+        }
+
+
+        public List<Produto> ListaProduto()
+        {
+            List<Produto> vaListaProduto = new List<Produto>();
+            Produto vaProduto = new Produto();
+            vaProduto.Nome = "Monitor C123";
+            vaProduto.Descricao = "Monitor mais barato do mundo";
+            vaProduto.Preco = 200.00;
+            vaListaProduto.Add(vaProduto);
+            vaProduto = new Produto();
+            vaProduto.Nome = "Monitor C987";
+            vaProduto.Descricao = "Monitor mais barato do mundo";
+            vaProduto.Preco = 200.00;
+            vaListaProduto.Add(vaProduto);
+            vaProduto = new Produto();
+            vaProduto.Nome = "HD 500 TB";
+            vaProduto.Descricao = "Monitor mais barato do mundo";
+            vaProduto.Preco = 200.00;
+            vaListaProduto.Add(vaProduto);
+
+            return vaListaProduto;
         }
     }
 }
