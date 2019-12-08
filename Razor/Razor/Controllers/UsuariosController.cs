@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Razor.DAO;
+using Razor.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -9,9 +11,28 @@ namespace Razor.Controllers
     public class UsuariosController : Controller
     {
         // GET: Usuario
-        public ActionResult Form()
+        public ActionResult Form(string email)
         {
-            return View("Form");
+            Usuario u = new Usuario()
+            {
+                Email = email
+            };
+            return View(u);
+        }
+
+        public ActionResult Cadastra(Usuario usuario)
+        {
+            if (ModelState.IsValid)
+            {
+                UsuariosDAO dao = new UsuariosDAO();
+                dao.Adiciona(usuario);
+                Session["usuarioLogado"] = usuario.Nome;
+                return RedirectToAction("Index", "Home");
+            }
+            else
+            {
+                return View("Form", usuario);
+            }
         }
     }
 }

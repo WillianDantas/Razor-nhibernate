@@ -1,4 +1,5 @@
-﻿using Razor.Models;
+﻿using Razor.DAO;
+using Razor.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,26 +13,11 @@ namespace Razor.Controllers
         // GET: Menu
         public ActionResult Index()
         {
-            ViewBag.Departamentos = ListaDepartamento();
+            DepartamentosDAO departamentosDAO = new DepartamentosDAO();
+            ViewBag.Departamentos = departamentosDAO.Lista();
+
             return View();
         }
 
-
-        public List<Departamento> ListaDepartamento()
-        {
-            List<Categoria> vaListaCategoria = new List<Categoria>();
-            List<Departamento> vaListaDepartamento = new List<Departamento>();
-            Categoria categoria = new Categoria();
-            categoria.Nome = "TV";
-            vaListaCategoria.Add(categoria);
-            categoria = new Categoria();
-            categoria.Nome = "NoteBook";
-            vaListaCategoria.Add(categoria);
-            Departamento departamento = new Departamento();
-            departamento.Nome = "Eletronico";
-            departamento.Categorias = vaListaCategoria;
-            vaListaDepartamento.Add(departamento);
-            return vaListaDepartamento;
-        }
     }
 }

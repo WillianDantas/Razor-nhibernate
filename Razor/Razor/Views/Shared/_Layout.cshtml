@@ -1,42 +1,18 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>Home</title>
     <link href="~/Content/bootstrap/css/bootstrap.css" rel="stylesheet" />
     <link href="~/Content/Style.css" rel="stylesheet" />
 </head>
 <body>
-    <div class="navbar navbar-fixed-top">
-        <div class="navbar-inner">
-            @Html.ActionLink("Razor", "Index", "Home", null, new { @class = "brand" })
-            <ul class="nav">
-                <li>@Html.ActionLink("Sobre", "Index", "Home")</li>
-                <li>@Html.ActionLink("Contato", "Index", "Home")</li>
-            </ul>
-            <p class="navbar-text pull-right">
-                @if (true == false)
-                {
-                    @:Bem-Vindo
-                    }
-                else
-                {
-                    @:Bem-Vindo
-                    @Html.ActionLink("Login", "Index", "Autenticacao")
-                    @: ou
-                    @Html.ActionLink("Cadastre-se", "Form", "Usuarios")
-                }
-            </p>
-        </div>
+    @Html.Partial("_MenuSuperior")
+    <div class="span3">
+        <!-- menu -->
+        @Html.Action("Index", "Menu")
     </div>
-    <div class="container-fluid">
-        <div class="row-fluid">
-            <div class="span3">
-                @Html.Action("Index","Menu")
-            </div>
-            <div class="span9">
-                @RenderBody()
-            </div>
-        </div>
+    <div class="span9">
+        @RenderBody()
     </div>
+    @RenderSection("Scripts", false)
 </body>
 </html>
