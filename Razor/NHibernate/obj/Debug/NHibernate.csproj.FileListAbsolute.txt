@@ -1,0 +1,16 @@
+C:\Users\willa\Documents\Repositorio\Razor\Razor\NHibernate\bin\Debug\hibernate.cfg.xml
+C:\Users\willa\Documents\Repositorio\Razor\Razor\NHibernate\bin\Debug\NHibernate.exe.config
+C:\Users\willa\Documents\Repositorio\Razor\Razor\NHibernate\bin\Debug\NHibernate.exe
+C:\Users\willa\Documents\Repositorio\Razor\Razor\NHibernate\bin\Debug\NHibernate.pdb
+C:\Users\willa\Documents\Repositorio\Razor\Razor\NHibernate\bin\Debug\FluentNHibernate.dll
+C:\Users\willa\Documents\Repositorio\Razor\Razor\NHibernate\bin\Debug\Iesi.Collections.dll
+C:\Users\willa\Documents\Repositorio\Razor\Razor\NHibernate\bin\Debug\NHibernate.dll
+C:\Users\willa\Documents\Repositorio\Razor\Razor\NHibernate\bin\Debug\System.Data.Common.dll
+C:\Users\willa\Documents\Repositorio\Razor\Razor\NHibernate\bin\Debug\System.Data.SqlClient.dll
+C:\Users\willa\Documents\Repositorio\Razor\Razor\NHibernate\bin\Debug\FluentNHibernate.pdb
+C:\Users\willa\Documents\Repositorio\Razor\Razor\NHibernate\bin\Debug\FluentNHibernate.xml
+C:\Users\willa\Documents\Repositorio\Razor\Razor\NHibernate\bin\Debug\Iesi.Collections.xml
+C:\Users\willa\Documents\Repositorio\Razor\Razor\NHibernate\bin\Debug\NHibernate.xml
+C:\Users\willa\Documents\Repositorio\Razor\Razor\NHibernate\obj\Debug\NHibernate.csprojResolveAssemblyReference.cache
+C:\Users\willa\Documents\Repositorio\Razor\Razor\NHibernate\obj\Debug\NHibernate.exe
+C:\Users\willa\Documents\Repositorio\Razor\Razor\NHibernate\obj\Debug\NHibernate.pdb

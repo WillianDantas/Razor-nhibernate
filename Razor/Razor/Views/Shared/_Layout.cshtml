@@ -1,8 +1,9 @@
-﻿<!DOCTYPE html>
+﻿@using System.Web.Optimization;
+
+<!DOCTYPE html>
 <html>
 <head>
-    <link href="~/Content/bootstrap/css/bootstrap.css" rel="stylesheet" />
-    <link href="~/Content/Style.css" rel="stylesheet" />
+    @Styles.Render("~/bundles/styles")
 </head>
 <body>
     @Html.Partial("_MenuSuperior")

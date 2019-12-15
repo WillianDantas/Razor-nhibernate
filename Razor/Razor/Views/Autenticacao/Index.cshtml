@@ -1,4 +1,6 @@
-﻿<div class="hero-unit span6">
+﻿@using System.Web.Optimization;
+
+<div class="hero-unit span6">
 
     <h2>Login</h2>
     <p>Já Possui Cadastro? Então faça seu login</p>
@@ -17,7 +19,7 @@
     </form>
 </div>
 @section Scripts {
-    <script src="~/scripts/jquery-1.7.1.js" type="text/javascript"></script>
-    <script src="~/scripts/jquery.validate.js" type="text/javascript"></script>
+
+    @Scripts.Render("~/bundles/scripts")
 
 }

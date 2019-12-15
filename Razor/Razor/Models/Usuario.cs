@@ -16,6 +16,8 @@ namespace Razor.Models
 
         public Sexo Sexo { get; set; }
 
+        public Estado Estado { get; set; }
+
         [Required, MinLength(3)]
         public String Senha { get; set; }
 
