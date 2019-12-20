@@ -13,3 +13,4 @@ C:\Users\willa\Documents\Repositorio\Razor\Razor\NHibernate\bin\Debug\Pesistenci
 C:\Users\willa\Documents\Repositorio\Razor\Razor\NHibernate\bin\Debug\Pesistencia.pdb
 C:\Users\willa\Documents\Repositorio\Razor\Razor\NHibernate\obj\Debug\Pesistencia.exe
 C:\Users\willa\Documents\Repositorio\Razor\Razor\NHibernate\obj\Debug\Pesistencia.pdb
+C:\Users\willa\Documents\Repositorio\Razor\Razor\NHibernate\obj\Debug\Pesistencia.csprojResolveAssemblyReference.cache

@@ -1,4 +1,5 @@
-﻿using NHibernate.Cfg;
+﻿using NHibernate;
+using NHibernate.Cfg;
 using NHibernate.Tool.hbm2ddl;
 using System;
 using System.Collections.Generic;
@@ -10,7 +11,14 @@ using System.Threading.Tasks;
 namespace DAL.Infra
 {
     public class NHibernateHelper
-    { 
+    {
+        private static ISessionFactory factory = CreateSessionFactory();
+
+        public static ISessionFactory CreateSessionFactory()
+        {
+            Configuration cfg = RecuperaConfiguracao();
+            return cfg.BuildSessionFactory();
+        }
         public static Configuration RecuperaConfiguracao()
         {
 
@@ -26,6 +34,12 @@ namespace DAL.Infra
         {
             Configuration cfg = RecuperaConfiguracao();
             new SchemaExport(cfg).Create(true, true);
+        }
+
+
+        public static ISession OpenSession()
+        {
+            return factory.OpenSession();
         }
     }
 }
