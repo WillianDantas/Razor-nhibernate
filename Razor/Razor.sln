@@ -5,8 +5,6 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Razor", "Razor\Razor.csproj", "{F85B4D0E-DB7D-4437-9E6D-F8F4B8026DA3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pesistencia", "NHibernate\Pesistencia.csproj", "{3801A1E0-A0B8-43F7-B1A4-82D7E562487E}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{F85B4D0E-DB7D-4437-9E6D-F8F4B8026DA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F85B4D0E-DB7D-4437-9E6D-F8F4B8026DA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F85B4D0E-DB7D-4437-9E6D-F8F4B8026DA3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3801A1E0-A0B8-43F7-B1A4-82D7E562487E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3801A1E0-A0B8-43F7-B1A4-82D7E562487E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3801A1E0-A0B8-43F7-B1A4-82D7E562487E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3801A1E0-A0B8-43F7-B1A4-82D7E562487E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

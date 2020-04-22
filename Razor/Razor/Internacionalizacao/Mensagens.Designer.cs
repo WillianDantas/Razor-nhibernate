@@ -61,7 +61,7 @@ namespace Razor.Internacionalizacao {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bem-Vindo.
+        ///   Looks up a localized string similar to Bem-Vindo .
         /// </summary>
         public static string BemVindo {
             get {
@@ -88,7 +88,7 @@ namespace Razor.Internacionalizacao {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Login.
+        ///   Looks up a localized string similar to Login .
         /// </summary>
         public static string Login {
             get {
@@ -97,7 +97,7 @@ namespace Razor.Internacionalizacao {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Logout.
+        ///   Looks up a localized string similar to Logout .
         /// </summary>
         public static string Logout {
             get {
@@ -106,7 +106,7 @@ namespace Razor.Internacionalizacao {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Olá Visitante.
+        ///   Looks up a localized string similar to Olá Visitante .
         /// </summary>
         public static string OlaVisitante {
             get {
@@ -115,7 +115,7 @@ namespace Razor.Internacionalizacao {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ou.
+        ///   Looks up a localized string similar to ou .
         /// </summary>
         public static string Ou {
             get {
@@ -124,7 +124,7 @@ namespace Razor.Internacionalizacao {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sobre.
+        ///   Looks up a localized string similar to Sobre .
         /// </summary>
         public static string Sobre {
             get {

@@ -31,6 +31,8 @@ namespace Pesistencia.DAO
             return session.Get<Usuario>(Id);
         }
 
+        
+
 
     }
 }

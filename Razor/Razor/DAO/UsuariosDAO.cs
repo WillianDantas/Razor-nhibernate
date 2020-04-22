@@ -1,4 +1,5 @@
-﻿using Razor.Models;
+﻿using NHibernate;
+using Razor.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,6 +9,12 @@ namespace Razor.DAO
 {
     public class UsuariosDAO
     {
+        private ISession session;
+        public UsuariosDAO(ISession session)
+        {
+            this.session = session;
+        }
+
         public static IList<Usuario> Usuarios = new List<Usuario>();
 
         public void Adiciona(Usuario u)
@@ -15,9 +22,22 @@ namespace Razor.DAO
             Usuarios.Add(u);
         }
 
-        public Usuario Busca(string email, string senha)
+        public Usuario Login(string email, string senha)
         {
-            return Usuarios.Where(u => u.Email == email && u.Senha == senha).FirstOrDefault();
+            var usuario = session.QueryOver<Usuario>();
+            return usuario.Where(x => x.Email == email && x.Senha == senha).List().FirstOrDefault();   
+        }
+
+        public void Add(Usuario usuario)
+        {
+            ITransaction transaction = session.BeginTransaction();
+            session.Save(usuario);
+            transaction.Commit();
+        }
+
+        public Usuario Find(int Id)
+        {
+            return session.Get<Usuario>(Id);
         }
     }
 }

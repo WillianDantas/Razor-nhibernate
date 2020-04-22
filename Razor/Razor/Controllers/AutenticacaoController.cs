@@ -1,4 +1,6 @@
-﻿using Razor.DAO;
+﻿using DAL.Infra;
+using NHibernate;
+using Razor.DAO;
 using Razor.Models;
 using System;
 using System.Collections.Generic;
@@ -10,6 +12,14 @@ namespace Razor.Controllers
 {
     public class AutenticacaoController : Controller
     {
+        private ISession session;
+        private UsuariosDAO usuarioDao;
+
+        public AutenticacaoController()
+        {
+            session = NHibernateHelper.OpenSession();
+            usuarioDao = new UsuariosDAO(session);
+        }
         // GET: Autenticacao
         public ActionResult Index()
         {
@@ -17,8 +27,8 @@ namespace Razor.Controllers
         }
         public ActionResult Autentica(string email, string senha)
         {
-            UsuariosDAO dao = new UsuariosDAO();
-            Usuario usuarioLogado = dao.Busca(email, senha);
+           
+            Usuario usuarioLogado = usuarioDao.Login(email, senha);
             if (usuarioLogado != null)
             {
                 Session["usuarioLogado"] = usuarioLogado.Nome;

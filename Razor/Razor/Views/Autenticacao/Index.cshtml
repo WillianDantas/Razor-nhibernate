@@ -4,9 +4,9 @@
 
     <h2>Login</h2>
     <p>Já Possui Cadastro? Então faça seu login</p>
-    <form action="@Url.Action("Autentica", "Autenticacao")">
-        <input type="text" class="input-block-level" placeholder="E-mail" required />
-        <input type="password" class="input-block-level" placeholder="Senha" required />
+    <form action="@Url.Action("Autentica", "Autenticacao")" method="post">
+        <input type="text" name="email" class="input-block-level" placeholder="E-mail" required />
+        <input type="password" name="senha" class="input-block-level" placeholder="Senha" required />
         <input type="submit" class="btn btn-large btn-primary" value="Fazer Login" />
     </form>
 </div>

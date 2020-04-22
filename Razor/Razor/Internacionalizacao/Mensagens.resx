@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="BemVindo" xml:space="preserve">
-    <value>Bem-Vindo</value>
+    <value>Bem-Vindo </value>
   </data>
   <data name="CadastreSe" xml:space="preserve">
     <value>Cadastre-se</value>
@@ -127,18 +127,18 @@
     <value>Contato</value>
   </data>
   <data name="Login" xml:space="preserve">
-    <value>Login</value>
+    <value>Login </value>
   </data>
   <data name="Logout" xml:space="preserve">
-    <value>Logout</value>
+    <value>Logout </value>
   </data>
   <data name="OlaVisitante" xml:space="preserve">
-    <value>Olá Visitante</value>
+    <value>Olá Visitante </value>
   </data>
   <data name="Ou" xml:space="preserve">
-    <value>ou</value>
+    <value>ou </value>
   </data>
   <data name="Sobre" xml:space="preserve">
-    <value>Sobre</value>
+    <value>Sobre </value>
   </data>
 </root>

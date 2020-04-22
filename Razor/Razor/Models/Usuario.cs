@@ -8,18 +8,22 @@ namespace Razor.Models
 {
     public class Usuario
     {
+        public virtual int Id { get; set; }
+
         [Required]
-        public String Nome { get; set; }
+        public virtual String Nome { get; set; }
 
         [Required, EmailAddress]
-        public String Email { get; set; }
+        public virtual String Email { get; set; }
 
+        [Required, MinLength(100)]
+        public virtual String Senha { get; set; }
+        /*
         public Sexo Sexo { get; set; }
 
         public Estado Estado { get; set; }
 
-        [Required, MinLength(3)]
-        public String Senha { get; set; }
+        
 
         [Required]
         public DateTime DataDeNascimento { get; set; }
@@ -35,5 +39,6 @@ namespace Razor.Models
         public string Observacoes { get; set; }
 
         public bool RecebePromocoes { get; set; }
+        */
     }
 }

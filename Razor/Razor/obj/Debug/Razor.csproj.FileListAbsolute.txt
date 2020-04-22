@@ -56,3 +56,15 @@ C:\Users\willa\Documents\Repositorio\Razor\Razor\Razor\obj\Debug\Razor.csproj.Ge
 C:\Users\willa\Documents\Repositorio\Razor\Razor\Razor\obj\Debug\en-us\Razor.resources.dll
 C:\Users\willa\Documents\Repositorio\Razor\Razor\Razor\obj\Debug\Razor.dll
 C:\Users\willa\Documents\Repositorio\Razor\Razor\Razor\obj\Debug\Razor.pdb
+C:\Users\willa\Documents\Repositorio\Razor\Razor\Razor\bin\FluentNHibernate.dll
+C:\Users\willa\Documents\Repositorio\Razor\Razor\Razor\bin\Iesi.Collections.dll
+C:\Users\willa\Documents\Repositorio\Razor\Razor\Razor\bin\NHibernate.dll
+C:\Users\willa\Documents\Repositorio\Razor\Razor\Razor\bin\System.Data.Common.dll
+C:\Users\willa\Documents\Repositorio\Razor\Razor\Razor\bin\System.Data.SqlClient.dll
+C:\Users\willa\Documents\Repositorio\Razor\Razor\Razor\bin\FluentNHibernate.pdb
+C:\Users\willa\Documents\Repositorio\Razor\Razor\Razor\bin\FluentNHibernate.xml
+C:\Users\willa\Documents\Repositorio\Razor\Razor\Razor\bin\Iesi.Collections.xml
+C:\Users\willa\Documents\Repositorio\Razor\Razor\Razor\bin\NHibernate.xml
+C:\Users\willa\Documents\Repositorio\Razor\Razor\Razor\bin\hibernate.cfg.xml
+C:\Users\willa\Documents\Repositorio\Razor\Razor\Razor\bin\log4net.dll
+C:\Users\willa\Documents\Repositorio\Razor\Razor\Razor\bin\log4net.xml
