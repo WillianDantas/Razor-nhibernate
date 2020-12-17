@@ -31,6 +31,7 @@ namespace Razor.Controllers
             return View(u);
         }
 
+        [HttpPost]
         public ActionResult BuscarUsuario(string email, string senha)
         {
             var usuario = usuarioDao.Login(email, senha);
@@ -38,6 +39,7 @@ namespace Razor.Controllers
             return View("Home", usuario);
         }
 
+        [HttpPost]
         public ActionResult Cadastrar(Usuario usuario)
         {
             if (ModelState.IsValid)

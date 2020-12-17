@@ -26,7 +26,6 @@ namespace DAL.Infra
 
             Configuration cfg = new Configuration();
             cfg.Configure();
-            cfg.SetInterceptor(new SqlDebugOutputInterceptor());
             cfg.AddAssembly(Assembly.GetExecutingAssembly());
 
             return cfg;

@@ -10,7 +10,7 @@
             @if (Session["usuarioLogado"] != null)
             {
                 @Mensagens.BemVindo
-                @Session["usuarioLogado"]
+                @(" " + Session["usuarioLogado"] + " " )
                 @Html.ActionLink("Logout", "Logout", "Autenticacao")
             }
             else

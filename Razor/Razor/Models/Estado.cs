@@ -5,7 +5,7 @@ using System.Web;
 
 namespace Razor.Models
 {
-    public enum Estado
+    public enum Estado 
     {
         AC, AL, AP, AM,
         BA, CE, DF, ES,

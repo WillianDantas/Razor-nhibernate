@@ -5,9 +5,9 @@ using System.Web;
 
 namespace Razor.Models
 {
-    public enum Sexo
+    public enum  Sexo 
     {
-        Masculino,
-        Femenino
+        Masculino = 'M',
+        Femenino = 'F'
     }
 }

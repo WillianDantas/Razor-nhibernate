@@ -1,0 +1,2 @@
+23:24:05.795SELECT this_.Id as Id1_0_0_, this_.Nome as Nome2_0_0_, this_.Senha as Senha3_0_0_, this_.Email as Email4_0_0_ FROM Usuario this_ WHERE (this_.Email = @p0 and this_.Senha = @p1);@p0 = 'Mariana.Vieira@gmail.com' [Type: String (4000:0:0)], @p1 = '1234567' [Type: String (4000:0:0)]
+==========

@@ -9,5 +9,11 @@
     <property name="Nome"/>
     <property name="Senha"/>
     <property name="Email"/>
+    <property name="Sexo"/>
+    <property name="Estado"/>
+    <property name="DataNascimento"/>
+    <property name="Endereco"/>
+    <property name="Complemento"/>
+    <property name="Cep"/>
   </class>
 </hibernate-mapping>

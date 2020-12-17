@@ -4,6 +4,10 @@
 <html>
 <head>
     @Styles.Render("~/bundles/styles")
+    @section Scripts
+    {
+        @Scripts.Render("~/bundles/scripts")
+    }
 </head>
 <body>
     @Html.Partial("_MenuSuperior")

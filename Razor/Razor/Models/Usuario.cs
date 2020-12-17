@@ -18,27 +18,21 @@ namespace Razor.Models
 
         [Required, MinLength(100)]
         public virtual String Senha { get; set; }
-        /*
-        public Sexo Sexo { get; set; }
-
-        public Estado Estado { get; set; }
-
         
+        public virtual String Sexo { get; set; }
+
+        public virtual String Estado { get; set; }
 
         [Required]
-        public DateTime DataDeNascimento { get; set; }
+        public virtual DateTime DataNascimento { get; set; }
 
         [Required]
-        public String Endereco { get; set; }
+        public virtual String Endereco { get; set; }
 
-        public String Complemento { get; set; }
+        public virtual String Complemento { get; set; }
 
         [Required, RegularExpression("\\d{5}-\\d{3}")]
-        public String CEP { get; set; }
-
-        public string Observacoes { get; set; }
-
-        public bool RecebePromocoes { get; set; }
-        */
+        public virtual  String Cep { get; set; }
+  
     }
 }

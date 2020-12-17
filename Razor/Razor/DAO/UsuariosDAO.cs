@@ -15,12 +15,6 @@ namespace Razor.DAO
             this.session = session;
         }
 
-        public static IList<Usuario> Usuarios = new List<Usuario>();
-
-        public void Adiciona(Usuario u)
-        {
-            Usuarios.Add(u);
-        }
 
         public Usuario Login(string email, string senha)
         {
@@ -28,7 +22,7 @@ namespace Razor.DAO
             return usuario.Where(x => x.Email == email && x.Senha == senha).List().FirstOrDefault();   
         }
 
-        public void Add(Usuario usuario)
+        public void Adiciona(Usuario usuario)
         {
             ITransaction transaction = session.BeginTransaction();
             session.Save(usuario);
